@@ -1,0 +1,10 @@
+  const handleLogin = () => {
+    if (usuario === USUARIO_VALIDO && senha === SENHA_VALIDA) {
+      router.push({
+        pathname: '/home',
+        params: { nome: usuario },
+      });
+    } else {
+      Alert.alert('Erro', 'Usuário ou senha incorretos!');
+    }
+  };
